@@ -15,7 +15,7 @@ class Themes {
 
 } TextStyle get headingStyle{
   return GoogleFonts.lato(
-    textStyle: TextStyle(
+    textStyle: const TextStyle(
 
     )
   );

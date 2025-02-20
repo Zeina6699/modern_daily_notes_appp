@@ -40,7 +40,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               CustomText(text: 'Hello, Zeina',fontWeight: FontWeight.w900,fontSize: 36,color:Get.isDarkMode?Colors.white:darkGreyClr),
               CustomText(text: 'you have a new reminder',color:Get.isDarkMode?Colors.grey[100]:darkGreyClr,fontWeight:FontWeight.w500,fontSize: 18, ),
          const SizedBox(height: 15),                      

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modern_daily_notes_appp/services/theme_services.dart';
+import 'package:modern_daily_notes_appp/ui/screens/add_task_page.dart';
 import 'package:modern_daily_notes_appp/ui/screens/home_page.dart';
-import 'package:modern_daily_notes_appp/ui/screens/notification_screen.dart';
 import 'package:get/get.dart';
 import 'package:modern_daily_notes_appp/ui/theme.dart';
 void main() {
@@ -19,7 +19,12 @@ class DailyNotes extends StatelessWidget {
       themeMode: ThemeServices().theme,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home:const HomePage()
+      routes: {
+        '/task':(context)=>AddTaskPage(),
+        '/home':(context)=>HomePage(),
+        '/notifi':(context)=>AddTaskPage()
+      },
+      initialRoute: '/home',
       // NotificationScreen(payload: 'title|desc|10:20|dd',)
     );
   }
